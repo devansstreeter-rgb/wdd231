@@ -146,6 +146,14 @@ main {
     grid-template-columns: 1fr;
 }
 
+.list img {
+    display: none;
+}
+
+.list .card ul {
+    grid-column: 1 / 3;
+}
+
 .member {
     border: 2px solid var(--color2);
 }
