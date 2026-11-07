@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Directory | Fairbank Chamber of Commerce</title>
+        <meta name="description" content="Directory of contact information for members of the chamber of commerce in Fairbank, Arizona">
+        <meta name="author" content="Daniel Streeter">
+        <link rel="icon" href="favicon.ico?v=2" type="image/x-icon">
+        <meta property="og:title" content="Directory - FairBank, AZ Chamber of Commerce">
+        <meta property="og:description" content="View and find contact information for our members">
+        <meta property="og:image" content="chamber-social.png">
+        <meta property="og:url" content="devanssteeter-rgb.github.io/wdd231/chamber/directory/">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/rendermembers.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img id="site-logo" href="" alt="Site Logo">
+            <span id="site-title">Fairbank Chamber of Commerce</span>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="current-page">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+            </nav>
+            <div>
+                <button id="darkmode" class="light-dark-toggle" type="button"></button>
+                <button id="nav-button" class="hamburger" type="button"></button>
+            </div>
+        </header>
+        <main>
+            <h1>Directory</h1>
+            <div class="directory-display-options">
+                <button id="grid-format" type="button">Grid</button>
+                <button id="list-format" type="button">List</button>
+            </div>
+            <div id="directory-cards">
+            </div>
+        </main>
+        <footer>
+            <ul class="contact-info">
+                <li id="footer-title">Fairbank Chamber of Commerce</li>
+                <li>1973 N RailRoad Ave</li>
+                <li>Fairbank, AZ 85616</li>
+                <li>info@fairbankazcommerce.org</li>
+                <li>(555) 516-1883</li>
+            </ul>
+            <ul class="socials">
+                <li><a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="LinkedIn" height="48"></a></li>
+                <li><a href="https://github.com/devansstreeter-rgb/wdd231"><img src="images/github.svg" alt="GitHub" height="48"></a></li>
+                <li><a href="https://www.x.com/"><img src="images/x-logo.svg" alt="X" height="48"></a></li>
+            </ul>
+            <ul class="page-info">
+                <li>WDD231 Class Project</li>
+                <li>Daniel Streeter</li>
+                <li>&copy;<span id="current-year"></span> Fairbank Chamber of Commerce</li>
+                <li>Last Modification: <span id="last-modified"></span></li>
+            </ul>
+        </footer>
+    </body>
+</html>

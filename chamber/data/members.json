@@ -1,0 +1,68 @@
+{
+    "members": [
+        {
+            "name": "Junction Laundry",
+            "address": "5421 1st Ave, Fairbank, AZ",
+            "phoneNumber":"(555) 423-6456",
+            "website": "junctionlaundry.com",
+            "image": "images/laundry.webp",
+            "level": 1
+        },
+        {
+            "name": "Fairbank Hardware & Lumber",
+            "address": "5407 1st Ave, Fairbank, AZ",
+            "phoneNumber":"(555) 878-4482",
+            "website": "fairbankazhardware.com",
+            "image": "images/hardware.webp",
+            "level": 3
+        },
+        {
+            "name": "Sleeper Motel",
+            "address": "247 Tie St, Fairbank, AZ",
+            "phoneNumber":"(555) 465-9228",
+            "website": "sleepatsleeper.com",
+            "image": "images/motel.webp",
+            "level": 2
+        },
+        {
+            "name": "Spike's Scoops",
+            "address": "4820 1st Ave, Fairbank, AZ",
+            "phoneNumber":"(555) 273-5833",
+            "website": "spikesscoops.com",
+            "image": "images/icecream.webp",
+            "level": 2
+        },
+        {
+            "name": "Rocking R Ranch",
+            "address": "40 S Hwy 80, Fairbank, AZ",
+            "phoneNumber":"(555) 485-9242",
+            "website": "rockingrfairbank.com",
+            "image": "images/ranch.webp",
+            "level": 3
+        },
+        {
+            "name": "1st Ave Dollar General",
+            "address": "5700 1st Ave, Fairbank, AZ",
+            "phoneNumber":"(555) 764-4377",
+            "website": "dollargeneral.com/store-directory/az/fairbank/8778",
+            "image": "images/dollar-general.webp",
+            "level": 2
+        },
+        {
+            "name": "Burton's Grocery",
+            "address": "3303 1st Ave, Fairbank, AZ",
+            "phoneNumber":"(555) 845-7254",
+            "website": "burtonsgroceryaz.com",
+            "image": "images/grocery.webp",
+            "level": 3
+        },
+        {
+            "name": "Ballast Bowling",
+            "address": "233 W Post Rd, Fairbank, AZ",
+            "phoneNumber":"(555) 133-6348",
+            "website": "ballastbowl.com",
+            "image": "images/bowling.webp",
+            "level": 1
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+@media only screen and (min-width: 32rem) {
+
+    /* Header */
+    header {
+        grid-template-columns: 48px 1fr 1fr 48px;
+        align-items: center;
+    }
+
+    #nav-button {
+      display: none;
+    }
+
+    #nav-bar {
+        display: block;
+    }
+
+    #nav-bar ul {
+        display: flex;
+        grid-gap: 0.5rem;
+
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

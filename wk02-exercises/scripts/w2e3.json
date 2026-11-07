@@ -1,0 +1,26 @@
+{
+    "Addams": {
+        "name": "Addams",
+        "move-date": "10-28-2016",
+        "size": 3,
+        "visited": false,
+        "members" : {
+            "Jeff": {
+                "name": "Jeff",
+                "sex": "male",
+                "dob": "4-6-1989"
+            },
+            "Peggy": {
+                "name": "Peggy",
+                "sex": "female",
+                "dob": "9-21-1990"
+            },
+            "Adelaide": {
+                "name": "Adelaide",
+                "sex": "female",
+                "dob": "1-30-2022"
+            }
+        }
+
+    }
+}
