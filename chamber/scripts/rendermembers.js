@@ -1,16 +1,13 @@
 const membersURL = 'data/members.json';
-const directoryDiv = document.querySelector('#directory-cards');
-const gridButton = document.querySelector('#grid-format');
-const listButton = document.querySelector('#list-format');
 
-async function getMemberData() {
+async function getMemberData () {
     const response = await fetch(membersURL);
     const data = await response.json();
     // console.table(data.members);
-    displayCards(data.members, directoryDiv);
+    return data;
 }
 
-const displayCards = (dataObject, cardTarget) => {
+function displayCards(dataObject, cardTarget) {
     dataObject.forEach((item) => {
         const level = ['member', 'silver', 'gold'][item.level - 1];
         const card = document.createElement('div');
@@ -24,12 +21,4 @@ const displayCards = (dataObject, cardTarget) => {
     });
 }
 
-getMemberData();
-
-gridButton.addEventListener('click', () => {
-    directoryDiv.classList.value = 'grid';
-});
-
-listButton.addEventListener('click', () => {
-    directoryDiv.classList.value = 'list';
-});
+export {getMemberData, displayCards};

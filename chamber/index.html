@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Home | Fairbank Chamber of Commerce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Home page for the chamber of commerce in Fairbank, Arizona">
+        <meta name="author" content="Daniel Streeter">
+        <link rel="icon" href="favicon.ico?v=2" type="image/x-icon">
+        <meta property="og:title" content="Directory - FairBank, AZ Chamber of Commerce">
+        <meta property="og:description" content="Fairbank AZ Chamber of Commerce: Welcome to the web site for the Fairbanks, AZ Chamber of Commerce">
+        <meta property="og:image" content="https://devansstreeter-rgb.github.io/wdd231/chamber/chamber-social.png">
+        <meta property="og:url" content="https://devansstreeter-rgb.github.io/wdd231/chamber/">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <script src="scripts/navigation.js" defer></script>
+        <script type="module" src="scripts/getdates.js"></script>
+        <script type="module" src="scripts/weather.js" defer></script>
+        <script type="module" src="scripts/rendermembers.js"></script>
+        <script type="module" src="scripts/homepage.js"></script>
+    </head>
+    <body>
+        <header>
+            <img id="site-logo" src="images/site-logo.svg" alt="Site Logo" width="48">
+            <span id="site-title">Fairbank Chamber of Commerce</span>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="#" class="current-page">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+            </nav>
+            <div id="header-buttons">
+                <button id="darkmode" class="light-dark-toggle" type="button"></button>
+                <button id="nav-button" class="hamburger" type="button"></button>
+            </div>
+        </header>
+        <main>
+            <h1>Home</h1>
+            <section id="welcome">
+            <img id="hero-image" src="images/hero-image-800px.webp" alt="hero image">
+            <a href="#" id="join">Join</a>
+            </section>
+            <section id="current-events">
+                <h2>Current Events</h2>
+            </section>
+            <section id="weather">
+                <h2>Weather</h2>
+                <div id="todays-weather">
+                    <p>Temperature: <span id="current-temp"></span></p>
+                    <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption id="weather-caption"></figcaption>
+                    </figure>
+                </div>
+                <div id="forecast">
+                    <h3>Forecast</h3>
+                </div>
+            </section>
+            <section id="spotlights">
+                <h2>Featured Businesses</h2>
+            </section>
+
+        </main>
+        <footer>
+            <ul class="contact-info">
+                <li id="footer-title">Fairbank Chamber of Commerce</li>
+                <li>1973 N RailRoad Ave</li>
+                <li>Fairbank, AZ 85616</li>
+                <li>info@fairbankazcommerce.org</li>
+                <li>(555) 516-1883</li>
+            </ul>
+            <ul class="socials">
+                <li><a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="LinkedIn" height="48"></a></li>
+                <li><a href="https://github.com/devansstreeter-rgb/wdd231"><img src="images/github.svg" alt="GitHub" height="48"></a></li>
+                <li><a href="https://www.x.com/"><img src="images/x-logo.svg" alt="X" height="48"></a></li>
+            </ul>
+            <ul class="page-info">
+                <li>WDD231 Class Project</li>
+                <li>Daniel Streeter</li>
+                <li>&copy;<span id="current-year"></span> Fairbank Chamber of Commerce</li>
+                <li>Last Modification: <span id="last-modified"></span></li>
+            </ul>
+        </footer>
