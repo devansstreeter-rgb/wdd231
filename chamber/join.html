@@ -50,14 +50,14 @@
                 <label for="email">E-mail Address:</label>
                 <input name="email" id="email" title="E-mail Address" type="email" autocomplete="email" placeholder="example@business.com" required>
                 <label for="phone">Phone Number:</label>
-                <input name="phone" id="phone" title="Phone Number" type="tel" autocomplete="tel-area-code" required>
+                <input name="phone" id="phone" title="Phone Number" type="tel" autocomplete="tel" required>
                 <label for="business-name">Business/Organization's Name:</label>
                 <input name="business-name" id="business-name" title="Name of Business" type="text" autocomplete="organization" required>
                 <fieldset><legend>Desired Membership Level</legend>
                     <input name="level" id="np" type="radio" value="Non-profit" title="Non-profit" required>
                     <label for="np">Non-profit (no fee)</label>
-                    <input name="level" id="normal" type="radio" value="Normal" title="Normal" required>
-                    <label for="normal">Normal membership</label>
+                    <input name="level" id="bronze" type="radio" value="Bronze" title="Bronze" required>
+                    <label for="bronze">Bronze membership</label>
                     <input name="level" id="silver" type="radio" value="Silver" title="Silver" required>
                     <label for="silver">Silver Membership</label>
                     <input name="level" id="gold" type="radio" value="Gold" title="Gold" required>
@@ -69,9 +69,9 @@
 
                 <button type="submit">Become a Member!</button>
             </form>
-            <section id="membership-levels">
+            <div id="membership-levels">
 
-            </section>
+            </div>
             <dialog id="level-details">
             </dialog>
         </main>

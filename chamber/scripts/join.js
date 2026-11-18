@@ -5,7 +5,7 @@ const levelsData = [
         cost: 'free'
     },
     {
-        name: 'Regular Membership',
+        name: 'Bronze Membership',
         benefits: ['none'],
         cost: '$50 annually'
     },
