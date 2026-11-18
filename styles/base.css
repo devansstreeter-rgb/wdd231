@@ -142,9 +142,18 @@ h2 {
 .completed::before {
     content: "\2713";
 }
+
 .card.completed {
     color: var(--color3);
     background-color: var(--color4);
+}
+
+#course-modal::backdrop {
+    background-color: rgba(80, 128, 160, 50%);
+}
+
+#close-modal::before {
+    content: "\00D7";
 }
 
 /* Footer */

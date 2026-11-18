@@ -83,6 +83,7 @@ const creditTotalSpan = document.querySelector('#credit-total');
 const allButton = document.querySelector('#all-courses');
 const wddButton = document.querySelector('#wdd-courses');
 const cseButton = document.querySelector('#cse-courses');
+const courseModal = document.querySelector('#course-modal');
 
 function makeCards(filter) {
     coursesSect.textContent='';
@@ -97,16 +98,37 @@ function makeCards(filter) {
         }
     }
     relevantCourses.forEach(course => {
-        const card = document.createElement('div');
+        const card = document.createElement('button');
         card.classList.add('card');
         if (course.completed == true) {
             card.classList.add('completed');
         }
         card.innerHTML = `${course.subject} ${course.number}`;
         coursesSect.append(card);
+        card.addEventListener('click', () => populateModal(course));
     });
     let creditTotal = relevantCourses.reduce((x,y) => x + y.credits, 0);
     creditTotalSpan.innerHTML = `Total credits: ${creditTotal}`;
+}
+
+function populateModal(course) {
+    courseModal.innerHTML = `
+    <h2>${course.subject} ${course.number}</h2>
+    <ul><li id='courseTitle'>${course.title}</li>
+    <li>Credits: ${course.credits}</li>
+    <li>${course.description}</li>
+    <li>Certificate: ${course.certificate}</li>
+    <li>Technology Stack: ${course.technology}</li></ul>
+    <button id="close-modal" aria-label="Close"> Exit Description</button>
+    `;
+    courseModal.querySelector('#close-modal').addEventListener('click', () => depopulateModal());
+    courseModal.showModal();
+    
+}
+
+function depopulateModal() {
+    courseModal.innerHTML = '';
+    courseModal.close();
 }
 
 wddButton.addEventListener('click', () => makeCards('wdd'));
