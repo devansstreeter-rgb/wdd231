@@ -242,6 +242,24 @@ details {
     border: 2px solid var(--silver);
 }
 
+/* Join */
+@keyframes levels {
+    0% {
+        opacity: 20%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#level-details button::after {
+    content: '\00D7';
+}
+
+#level-details {
+    animation: levels 0.25s ease-in;
+}
+
 /* Footer */
 footer {
     display: flex;
