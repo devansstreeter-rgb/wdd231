@@ -31,7 +31,6 @@ async function forecast() {
         const response = await fetch(forecastURL);
         if (response.ok) {
         const data = await response.json();
-        console.log(data);
         displayForecast(data);
         } else {
             throw new Error(await response.text());
@@ -52,7 +51,6 @@ function displayToday(data) {
 }
 
 function displayForecast(data) {
-    console.log(data.list);
     const onePerDay = data.list.filter(entry => entry.dt_txt.slice(11) == '21:00:00');
     let dayIndex = 1;
     onePerDay.forEach(day => {
