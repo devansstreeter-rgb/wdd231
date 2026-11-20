@@ -46,14 +46,14 @@
                 <label for="last-name">Last name:</label>
                 <input name="last-name" id="last-name" title="Last Name" type="text" autocomplete="family-name" required>
                 <label for="org-title">Organizational title:</label>
-                <input name="org-title" id="org-title" title="Minimum 7 characters. Letters, spaces, and dashes only" type="text" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}">
+                <input name="org-title" id="org-title" title="Minimum 7 characters. Letters, spaces, and dashes only" type="text" autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,}$">
                 <label for="email">E-mail Address:</label>
                 <input name="email" id="email" title="E-mail Address" type="email" autocomplete="email" placeholder="example@business.com" required>
                 <label for="phone">Phone Number:</label>
                 <input name="phone" id="phone" title="Phone Number" type="tel" autocomplete="tel" required>
                 <label for="business-name">Business/Organization's Name:</label>
                 <input name="business-name" id="business-name" title="Name of Business" type="text" autocomplete="organization" required>
-                <fieldset><legend>Desired Membership Level</legend>
+                <!-- <fieldset><legend>Desired Membership Level</legend> -->
                     <input name="level" id="np" type="radio" value="np" title="Non-profit" required>
                     <label for="np">Non-profit (no fee)</label>
                     <input name="level" id="bronze" type="radio" value="bronze" title="Bronze" required>
@@ -62,7 +62,7 @@
                     <label for="silver">Silver Membership</label>
                     <input name="level" id="gold" type="radio" value="gold" title="Gold" required>
                     <label for="gold">Gold Membership</label>
-                </fieldset>
+                <!-- </fieldset> -->
                 <label for="organization-description">Organization Description:</label>
                 <input name="timestamp" type="hidden" id="timestamp">
                 <textarea name="description" id="organization-description" title="Organization Description" placeholder="Type here..."></textarea>

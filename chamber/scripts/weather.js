@@ -43,7 +43,7 @@ async function forecast() {
 }
 
 function displayToday(data) {
-    tempSpan.innerHTML = `${data.main.temp}&deg;F`;
+    tempSpan.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     const desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
@@ -52,15 +52,16 @@ function displayToday(data) {
 }
 
 function displayForecast(data) {
-    const onePerDay = data.list.filter(entry => entry.dt_txt.slice(11) == '12:00:00');
+    console.log(data.list);
+    const onePerDay = data.list.filter(entry => entry.dt_txt.slice(11) == '21:00:00');
     let dayIndex = 1;
     onePerDay.forEach(day => {
         const forecastCard = document.createElement('figure');
         forecastCard.classList.value = "forecast-card";
-        forecastCard.innerHTML = `<h4>${getRelativeDayString(dayIndex)}</h4>`+
-        `<p>${day.main.temp_max}&deg;F</p>`+
-        `<img src="https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png">`+
-        `<figcaption>${day.weather[0].description.toUpperCase()}</figcaption>`;
+        forecastCard.innerHTML = `<h4>${getRelativeDayString(dayIndex)}</h4>
+        <p>${Math.round(day.main.temp_max)}&deg;F</p>
+        <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png">
+        <figcaption>${day.weather[0].description.toUpperCase()}</figcaption>`;
         forecastDiv.appendChild(forecastCard);
         dayIndex++;
     });
