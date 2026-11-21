@@ -37,7 +37,7 @@ levelsData.forEach(level => {
 function populateModal(level) {
     let modalContentString = `
     <h2>${level.name}</h2>
-    <button class="close-button" type="button"></button>
+    <button class="close-button" type="button" aria-label="close modal"></button>
     <p>Benefits:
     <ul>
     `;
