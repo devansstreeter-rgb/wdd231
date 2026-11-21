@@ -24,6 +24,10 @@
         max-width: 90rem;
     }
 
+    #current-events {
+        height: 300px;
+    }
+
     #weather {
     display: grid;
     grid-template-columns: 1fr 1fr;
