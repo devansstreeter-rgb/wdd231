@@ -58,7 +58,7 @@ function displayForecast(data) {
         forecastCard.classList.value = "forecast-card";
         forecastCard.innerHTML = `<h4>${getRelativeDayString(dayIndex)}</h4>
         <p>${Math.round(day.main.temp_max)}&deg;F</p>
-        <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png">
+        <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="${day.weather[0].description}">
         <figcaption>${day.weather[0].description.toUpperCase()}</figcaption>`;
         forecastDiv.appendChild(forecastCard);
         dayIndex++;
