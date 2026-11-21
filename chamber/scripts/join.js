@@ -26,7 +26,7 @@ const levelsModal = document.querySelector('#level-details');
 
 levelsData.forEach(level => {
     const levelCard = document.createElement('div');
-    levelCard.innerHTML = `<h3>${level.name}</h3>`;
+    levelCard.innerHTML = `<h2>${level.name}</h2>`;
     const infoButton = document.createElement('button');
     infoButton.textContent = 'learn more';
     infoButton.addEventListener('click', () => populateModal(level));
